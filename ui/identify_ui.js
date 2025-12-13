@@ -1,6 +1,6 @@
 import { storage } from '../utils/localstorage.js';
 import { genimg } from '../utils/ai_img.js';
-import { exploreItem } from '../game/explore_item.js';
+import { exploreItem } from '../game/identify_item.js';
 
 const urlParams = new URLSearchParams(window.location.search);
 const itemIndex = urlParams.get('index');

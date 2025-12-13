@@ -1,0 +1,132 @@
+/* Settings Page Styles */
+.settings-container {
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.settings-section {
+    margin-bottom: 30px;
+}
+
+.settings-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.settings-input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--grid-cell-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't overflow width */
+}
+
+.btn-dark {
+    background-color: #2c313a;
+}
+
+/* ID Card Styles */
+.id-card {
+    width: 350px;
+    height: 200px;
+    background-color: #1a1d24;
+    background-image: linear-gradient(135deg, #1a1d24 0%, #0f1115 100%);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    font-family: sans-serif;
+}
+
+.id-card-deco {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    border: 20px solid rgba(0, 240, 255, 0.05);
+    border-radius: 50%;
+}
+
+.id-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.id-card-title {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+}
+
+.id-card-dot {
+    width: 30px;
+    height: 30px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.id-card-content {
+    display: flex;
+    gap: 15px;
+}
+
+.id-card-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.id-card-avatar-icon {
+    font-size: 30px;
+}
+
+.id-card-info {
+    flex: 1;
+}
+
+.id-card-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.id-card-pk-label {
+    font-size: 10px;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.id-card-pk-value {
+    font-size: 10px;
+    font-family: monospace;
+    color: var(--accent-color);
+    word-break: break-all;
+}
+
+.id-card-footer {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    color: #555;
+}

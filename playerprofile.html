@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile</title>
+    <link rel="stylesheet" href="ui/profile.css">
+</head>
+<body>
+    <div class="document-container">
+        <div class="watermark">CONFIDENTIAL</div>
+        
+        <div class="header">
+            <div class="header-title">
+                <h1>身份证明文件</h1>
+                <div class="subtitle">IDENTITY DOCUMENT</div>
+            </div>
+            <div class="header-meta">
+                <div>CLASSIFICATION: RESTRICTED</div>
+                <div>ORG: MIST AHEAD EXP.</div>
+                <div id="doc-date">DATE: --</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-col">
+                <div class="item-image-container">
+                    <div style="font-size: 100px; color: #ccc;">👤</div>
+                </div>
+                
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <div class="stat-label">ACCESS LEVEL</div>
+                        <div class="stat-value">LEVEL 1</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">STATUS</div>
+                        <div class="stat-value" id="player-status">--</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">KEY TYPE</div>
+                        <div class="stat-value">RSA-2048</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div>
+                    <div class="section-title">IDENTITY</div>
+                    <div class="main-name" id="player-name">--</div>
+                </div>
+
+                <div>
+                    <div class="section-title">CRYPTOGRAPHIC CREDENTIALS</div>
+                    
+                    <div class="ability-card">
+                        <div class="ability-header">
+                            <span class="ability-index">PUBLIC KEY</span>
+                            <span class="ability-condition">VISIBLE</span>
+                        </div>
+                        <div class="ability-text" id="player-pk" style="font-family: monospace; word-break: break-all; font-size: 8pt;">
+                            --
+                        </div>
+                    </div>
+
+                    <div class="ability-card" style="margin-top: 15px;">
+                        <div class="ability-header">
+                            <span class="ability-index">PRIVATE KEY</span>
+                            <span class="ability-condition">TOP SECRET</span>
+                        </div>
+                        <div class="ability-text" id="player-sk" style="font-family: monospace; word-break: break-all; font-size: 8pt; color: #d32f2f;">
+                            --
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>SYSTEM GENERATED REPORT</div>
+            <div>PAGE 1 OF 1</div>
+            <div>ID: <span id="footer-id">--</span></div>
+        </div>
+    </div>
+
+    <script type="module" src="ui/playerprofile_ui.js"></script>
+</body>
+</html>

@@ -1,5 +1,8 @@
 var storage = {
     "inventory": [],
+    "username": "Unknown Explorer",
+    "sk": null,
+    "pk": null
 }
 
 function save_localstorage() {

@@ -74,14 +74,16 @@ class InventoryUI {
         this.menu.style.top = `${top}px`;
         this.menu.style.left = `${left}px`;
 
-        this.menu.querySelector("#explore-btn").onclick = () => {
-            open(`explore.html?index=${index}`, '_blank');
-            this.menu.style.display = 'none';
-        }
-        this.menu.querySelector("#profile-btn").onclick = () => {
-            alert("查看档案功能尚未实现。");
-            this.menu.style.display = 'none';
-        }
+        if (this.menu.querySelector("#identify-btn"))
+            this.menu.querySelector("#identify-btn").onclick = () => {
+                open(`identify.html?index=${index}`, '_blank');
+                this.menu.style.display = 'none';
+            }
+        if (this.menu.querySelector("#profile-btn"))
+            this.menu.querySelector("#profile-btn").onclick = () => {
+                open(`profile.html?index=${index}`, '_blank');
+                this.menu.style.display = 'none';
+            }
     }
 
     renderMenuContent(index) {
@@ -94,7 +96,7 @@ class InventoryUI {
             <hr>
             <strong>【外观】</strong> ${item.appearance}<br><br>
             <strong>【获得日期】</strong> ${item.claim_date}<br><br>
-            ${item.fully_discovered ? "" : "<button id='explore-btn' class='full-width-btn'>格物致知</button>"}
+            ${item.fully_discovered ? "" : "<button id='identify-btn' class='full-width-btn'>格物致知</button>"}
             ${item.fully_discovered ? "<button id='profile-btn' class='full-width-btn'>查看档案</button>" : ""}
         `;
     }
