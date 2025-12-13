@@ -11,7 +11,7 @@ async function ask_llm(prompt, system = "") {
         method: "GET",
     })
 
-    var origin = await response.text();
+    var origin = await response.text()+"</response>";
     const match = origin.match(/<response>([\s\S]*?)<\/response>/);
     return match ? match[1] : origin;
 }

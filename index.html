@@ -2,9 +2,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mist Ahead</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./ui/style.css">
 </head>
 
 <body>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <div class="nav-tab active" data-target="inventory-tab">仓库</div>
+        <div class="nav-tab" data-target="settings-tab">设置</div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content-container">
+        <!-- Inventory Tab -->
+        <div id="inventory-tab" class="tab-content active">
+            <div id="inventory-container" class="inventory-grid"></div>
+        </div>
+
+        <!-- Settings Tab (Placeholder) -->
+        <div id="settings-tab" class="tab-content">
+            <p>设置功能开发中...</p>
+            <button class="full-width-btn">保存设置</button>
+            <button class="full-width-btn" style="margin-top: 10px;">重置游戏</button>
+        </div>
+    </div>
+
+    <!-- Floating Menu -->
+    <div id="floating-menu" class="floating-menu">
+        无内容
+    </div>
+
+    <!-- Scripts -->
     <script type="module" src="./game/gen_item.js"></script>
+    <script type="module" src="./ui/inventory_ui.js"></script>
 </body>

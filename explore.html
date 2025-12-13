@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>格物致知 - Mist Ahead</title>
+    <link rel="stylesheet" href="./ui/style.css">
+</head>
+<body>
+    <div class="explore-container">
+        <div class="item-display">
+            <div class="img-wrapper">
+                <img id="item-image" src="" alt="Item Image" class="item-image-large">
+            </div>
+            <h2 id="item-name">???</h2>
+        </div>
+        
+        <div class="chat-container" id="chat-container">
+            <!-- Chat messages will appear here -->
+            <div class="message system">
+                <div class="message-content">
+                    你正在仔细观察这个物品... <br>你可以尝试询问它的用途、材质或历史。
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="输入你的发现或疑问..." autocomplete="off">
+            <button id="send-btn" class="full-width-btn" style="width: auto; margin-top: 0; flex-shrink: 0;">发送</button>
+        </div>
+    </div>
+
+    <script type="module" src="./ui/explore_ui.js"></script>
+</body>
+</html>
